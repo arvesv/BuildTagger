@@ -1,13 +1,7 @@
-﻿
-
-using btprog;
+﻿using btprog;
 using CommandLine;
 
-return CommandLine.Parser.Default.ParseArguments<GitInfoOptions, WriteVerOptions>(args).MapResult(
-    
+return Parser.Default.ParseArguments<GitInfoOptions, WriteVerOptions>(args).MapResult(
     (GitInfoOptions opts) => Util.RunGitInfo(opts),
-        (WriteVerOptions opts) => Util.WriteVerOptions(opts),
+    (WriteVerOptions opts) => Util.CreateVersionFile(opts),
     _ => 1);
-
-
-

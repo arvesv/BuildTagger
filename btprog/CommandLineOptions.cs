@@ -2,8 +2,8 @@
 
 namespace btprog
 {
-    [Verb("gitinfo",HelpText = "Dump Gut workspace information into VCInfo.json")]
-    public  class GitInfoOptions
+    [Verb("gitinfo", HelpText = "Dump Gut workspace information into VCInfo.json")]
+    public class GitInfoOptions
     {
         public GitInfoOptions()
         {

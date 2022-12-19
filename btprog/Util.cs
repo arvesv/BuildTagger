@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace btprog
+﻿namespace btprog
 {
     internal static class Util
     {
@@ -18,8 +12,11 @@ namespace btprog
 
 
 
-        internal static int WriteVerOption(WriteVerOptions opts)
+        internal static int CreateVersionFile(WriteVerOptions opts)
         {
+
+
+
             return 0;
         }
     }
