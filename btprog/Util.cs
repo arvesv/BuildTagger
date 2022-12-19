@@ -15,5 +15,12 @@ namespace btprog
             return 0;
 
         }
+
+
+
+        internal static int WriteVerOption(WriteVerOptions opts)
+        {
+            return 0;
+        }
     }
 }

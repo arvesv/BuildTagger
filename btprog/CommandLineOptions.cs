@@ -10,7 +10,8 @@ namespace btprog
             Directory = "";
 
         }
-        [Option("directory", Required = true, HelpText = "Input filename.")]
+
+        [Option(Required = true, HelpText = "Input filename.")]
         public string Directory { get; set; }
     }
 
@@ -20,7 +21,7 @@ namespace btprog
     public class WriteVerOptions
     {
         [Option("directory", Required = false, HelpText = "Input filename.")]
-        public string Directory { get; set; }
+        public string Directory { get; set; } = "";
 
     }
 }
