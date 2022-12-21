@@ -12,7 +12,10 @@ namespace btprog
         }
 
         [Option(Required = true, HelpText = "Input filename.")]
-        public string Directory { get; set; }
+        public string Directory { get; init; }
+
+        [Option(HelpText = "Input filename.")]
+        public string FileName { get; init; } = "VCInfo";
     }
 
 
