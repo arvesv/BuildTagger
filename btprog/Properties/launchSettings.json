@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "btprog": {
+      "commandName": "Project",
+      "commandLineArgs": "gitinfo --directory D:\\slett\\BuildTagger"
+    }
+  }
+}
