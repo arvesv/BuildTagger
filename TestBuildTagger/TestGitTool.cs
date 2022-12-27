@@ -1,6 +1,4 @@
-using System.Diagnostics;
-using btprog;
-using Microsoft.VisualBasic.CompilerServices;
+using BuildTagger;
 
 namespace TestBuildTagger
 {
@@ -16,9 +14,11 @@ namespace TestBuildTagger
                 d => Directory.Exists(Path.Join(d, ".git")));
 
 
+            var vcinfopath = Path.Join(gitDir, Util.VCFileName);
+
+
             // Delete any previous runs
-            if(File.Exists(Path.Join(gitDir, Util.VCFileName)))
-                Directory.Delete(Util.VCFileName);
+            if (File.Exists(vcinfopath)) File.Delete(vcinfopath);
 
             // Should return 0 if no errors
             Assert.AreEqual(0, Util.RunGitInfo(new GitInfoOptions { Directory = gitDir }));
