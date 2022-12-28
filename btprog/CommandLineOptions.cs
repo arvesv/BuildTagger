@@ -1,6 +1,6 @@
 ﻿using CommandLine;
 
-namespace btprog
+namespace BuildTagger
 {
     [Verb("gitinfo", HelpText = "Dump Gut workspace information into VCInfo.json")]
     public class GitInfoOptions

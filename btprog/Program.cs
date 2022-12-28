@@ -1,4 +1,4 @@
-﻿using btprog;
+﻿using BuildTagger;
 using CommandLine;
 
 return Parser.Default.ParseArguments<GitInfoOptions, WriteVerOptions>(args).MapResult(
