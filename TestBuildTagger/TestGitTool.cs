@@ -11,7 +11,7 @@ namespace TestBuildTagger
             // A little 'hacky' way for finding the root Git folder for this project,
             var gitDir = Util.FindParentFolder(
                 Directory.GetCurrentDirectory(),
-                d => Directory.Exists(Path.Join(d, ".git")));
+                d => Directory.Exists(Path.Join(d, ".git"))) ?? "";
 
 
             var vcinfopath = Path.Join(gitDir, Util.VCFileName);

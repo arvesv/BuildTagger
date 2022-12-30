@@ -5,14 +5,8 @@ namespace BuildTagger
     [Verb("gitinfo", HelpText = "Dump Gut workspace information into VCInfo.json")]
     public class GitInfoOptions
     {
-        public GitInfoOptions()
-        {
-            Directory = "";
-
-        }
-
-        [Option(Required = true, HelpText = "Input filename.")]
-        public string Directory { get; init; }
+        [Option(Required = true, HelpText = "Folder to analyze")]
+        public string Directory { get; init; } = "";
 
         [Option(HelpText = "Input filename.")]
         public string FileName { get; init; } = "VCInfo";
