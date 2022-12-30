@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\btprog\BuildTagger.csproj" />
+    <ProjectReference Include="..\BuildTagger\BuildTagger.csproj" />
   </ItemGroup>
 
 </Project>
